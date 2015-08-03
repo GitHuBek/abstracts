@@ -62,5 +62,8 @@ git pull
   git clone --bare originalRepo cleanRepo
 добавление удаленного репозитория
   git remote add repoName wayToRepo
-
+удаление локальной ветки
+  git branch -d nameOfBranch
+уделение удаленной ветки
+  git push origin :nameOfBranch
 read about ssh-keys
