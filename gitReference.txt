@@ -1,0 +1,66 @@
+установка:
+  git config --global user.name "name"
+  git config --global user.email "email"
+установка окончаний строк:
+  git config --global core.autocrlf input
+  git config --global core.safecrlf true
+создание git репозитория
+  git init
+добавление в репозитории страницы
+  git add someFile
+  git commit -m "some commit"
+    -m интерактивное редактирование комиттов
+проверка состояния репозитория
+  git status
+добавление изменений в репозиторий
+ git add someFile
+коммит того, что проиндексировано в репозитарии
+  git commit
+добавление в репозитарий файла из текущего каталога
+  git add .
+просмотр проиведенных изменений
+  git log
+отмена локальных изменений(до локализации)
+  git checkout someFile
+отмена индексации изменений
+  git reset
+    HEAD someFile - сбрасывает буйерную зону к HEAD
+отмена коммитов
+
+изменение последнего коммита
+  git commit --amend -m "some Commit"
+перемещение файла
+  mkdir someDir
+  git mv someFile somDire
+        ||
+  mkdir someDir
+  mv someFile
+  git add someDir/someFile
+  git rm someFile
+
+прочитать об SHA1 хэш
+
+создание новой ветки
+  git checkout -b nameOfBranch
+навигация по веткам
+  git checkout nameOfBranch
+слияние двух веток
+  git merge <someHash>
+сброс слияния
+  git reset -hard <someHash>
+преобразование веток
+  git rebase anotherFork
+клонирование репозитория
+  git clone cloning cloned
+удаленные репозитарии
+  git remote
+  git remote show origin
+git pull
+  git fetch
+  git remote origin/master
+создание чистого  репозитория
+  git clone --bare originalRepo cleanRepo
+добавление удаленного репозитория
+  git remote add repoName wayToRepo
+
+read about ssh-keys
